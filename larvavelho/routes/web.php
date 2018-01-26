@@ -58,4 +58,6 @@ Route::get('servicos2/{nome}/{cpf}/{rg}', function ($nome,$cpf,$rg) {
     Seu RG eh ".$rg.".<br>";
 });*/
 
-Route::get('/{p1}/{p2}', 'ExemploController@recebeParametro');
+/*Route::get('/{p1}/{p2}', 'ExemploController@recebeParametro');*/
+Route::get('/silk', 'ExemploController@inicial')->name('SilkGetter');
+Route::post('/silk', 'ExemploController@silker')->name('SilkRoad');

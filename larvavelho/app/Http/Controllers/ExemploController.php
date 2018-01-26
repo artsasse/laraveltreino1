@@ -19,4 +19,11 @@ class ExemploController extends Controller
       'beta'=>$p2
     ]);
   }
+
+  public function silker(Request $request){
+    $first = $request->input('firstname');
+    $last = $request-> input('lastname');
+    dd($first,$last);
+  }
+
 }
