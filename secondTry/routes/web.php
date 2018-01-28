@@ -25,3 +25,6 @@ Route::post('/silk', 'UsuarioController@store')->name('SilkRoad');*/
 
 Route::get('contato', 'ContatoController@create')->name('contato.create');
 Route::post('contato', 'ContatoController@store')->name('contato.store');
+Route::get('teste', function(){
+  return view('testanu');
+});
